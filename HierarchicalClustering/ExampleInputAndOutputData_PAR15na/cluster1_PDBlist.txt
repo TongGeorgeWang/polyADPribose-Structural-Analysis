@@ -1,0 +1,16 @@
+79_X.pdb
+121_X.pdb
+508_X.pdb
+513_X.pdb
+514_X.pdb
+515_X.pdb
+516_X.pdb
+517_X.pdb
+525_X.pdb
+526_X.pdb
+527_X.pdb
+530_X.pdb
+531_X.pdb
+716_X.pdb
+802_X.pdb
+838_X.pdb
