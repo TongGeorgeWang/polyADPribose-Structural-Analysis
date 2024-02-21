@@ -1,0 +1,42 @@
+             GAJOE  Version 1.3
+            Ensemble optimization
+ Experimental data file name ............................ : PARna.dat
+ Intensities file name .................................. : _X00.int
+ Master file was used for this construct
+ --Advanced mode--
+ Number of generations .................................. : 10000
+ Number of ensembles .................................... : 50
+ Number of curves per ensemble .......................... : 20
+ Maximum number of mutations per ensemble ............... : 10
+ Number of crossings per generation ..................... : 20
+ Number of cycles ....................................... : 50
+ Repetitions allowed
+ Convergence file is created
+                       Number of theoretical curves :  2066
+ Start:  Wed Apr 19 12:19:06 2023
+ End:    Wed Apr 19 12:25:33 2023
+ Files created:                                                                           
+ Log file ............................................... :                      GA002.log
+ File containing the selection frequency of each model... :              best_curve002.txt
+ Fit to the experimental data ........................... :           profilesPARna002.fit
+ Chi convergence ........................................ :             convergence002.txt
+ File showing the best ten ensembles of each cycle ...... :          selected_ensem002.txt
+ Files in the pdb folder:                                                                 
+ Filename                 Rg   Max.Size                                                   
+ 34_X.pdb                0.00     0.00
+ 73_X.pdb                0.00     0.00
+ 316_X.pdb               0.00     0.00
+ 377_X.pdb               0.00     0.00
+ 380_X.pdb               0.00     0.00
+ 476_X.pdb               0.00     0.00
+ 513_X.pdb               0.00     0.00
+ 525_X.pdb               0.00     0.00
+ 533_X.pdb               0.00     0.00
+ 541_X.pdb               0.00     0.00
+ 682_X.pdb               0.00     0.00
+ 726_X.pdb               0.00     0.00
+ 728_X.pdb               0.00     0.00
+ 755_X.pdb               0.00     0.00
+ 786_X.pdb               0.00     0.00
+ 838_X.pdb               0.00     0.00
+ 839_X.pdb               0.00     0.00
