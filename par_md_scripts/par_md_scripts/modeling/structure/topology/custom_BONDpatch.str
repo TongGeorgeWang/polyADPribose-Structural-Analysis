@@ -1,0 +1,9 @@
+PRES BND -0.32 ! Patch to connect C2' with O1D of another monomer
+DELETE ATOM 2H2'
+DELETE ATOM 2O2'
+DELETE ATOM 1HO1
+ATOM O1D OC311   -0.23 !
+ATOM C2' CN7B    -0.09 !
+BOND 1O1D 2C2'
+
+END

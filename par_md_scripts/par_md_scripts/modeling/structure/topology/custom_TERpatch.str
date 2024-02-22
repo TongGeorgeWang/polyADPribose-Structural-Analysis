@@ -1,0 +1,17 @@
+! There is extra 0.19 charge coming from orig patches here, so I ~equally divided it among O1D,HO1 (-0.09) and O2',H2' (-0.1)
+! cannot change charge on O1D, so only changing HO1 -> 
+! i.e. for O2',H2', H2': 0.43->0.43
+
+PRES 1TER ! Patch to put H on ribose end of PAR, i.e. add HO1 on O1D
+ATOM HO1  HCP1    0.35 ! 0.42->0.42-0.07=0.35
+BOND O1D HO1
+IC O4D   C1D   O1D   HO1  1.4227  109.76   66.79  107.33   0.9584
+
+PRES 2TER ! the 2 is because patch adds H on C2'
+ATOM O2'  ON5    -0.72 ! -0.66 -> -0.66-0.06=-0.72
+ATOM H2'  HN5     0.37 ! 0.43 -> 0.43-0.06=0.37
+BOND C2' O2'  O2' H2'
+IC    C1'     C3'     *C2'    O2'         1.5216  100.67  120.50  109.82   1.4183
+IC    H2'     O2'     C2'     C3'         0.9782  102.50   14.41  109.82   1.5185
+
+END

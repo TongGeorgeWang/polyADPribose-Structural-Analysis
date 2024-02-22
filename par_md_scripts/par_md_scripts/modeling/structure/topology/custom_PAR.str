@@ -1,0 +1,170 @@
+RESI PAR		-2.00  ! poly(ADP-ribose) residue
+			       ! Joining ARIB with ADP
+
+GROUP
+ATOM C4'  CN7     0.16  
+ATOM H4'  HN7     0.09  
+ATOM O4'  ON6B   -0.50  
+ATOM C1'  CN7B    0.16  
+ATOM H1'  HN7     0.09  
+GROUP                   
+ATOM C5   CN5     0.28  
+ATOM N7   NN4    -0.71  
+ATOM C8   CN4     0.34  
+ATOM H8   HN3     0.12  
+ATOM N9   NN2    -0.05  
+                        
+ATOM N1   NN3A   -0.74  
+ATOM C2   CN4     0.50  
+ATOM H2   HN3     0.13  
+ATOM N3   NN3A   -0.75  
+ATOM C4   CN5     0.43  
+ATOM C6   CN2     0.46  
+                        
+ATOM N6   NN1    -0.77  
+ATOM H61  HN1     0.38  
+ATOM H62  HN1     0.38  
+GROUP                   
+!ATOM C2'  CN7B    0.14
+ATOM C2'  CN7B    -0.09  ! 0.14 -> 0.14-0.66+0.43
+ATOM H2'' HN7     0.09
+!ATOM O2'  ON5    -0.66
+!ATOM H2'  HN5     0.43
+GROUP
+ATOM C3'  CN7     0.14
+ATOM H3'  HN7     0.09
+ATOM O3'  ON5    -0.66
+ATOM H3T  HN5     0.43
+GROUP
+ATOM C5'  CN8B   -0.08
+ATOM H5'  HN8     0.09
+ATOM H5'' HN8     0.09
+ATOM O5'  ON2    -0.62
+ATOM PA   P       1.50
+ATOM O1A  ON3    -0.82  ! ? is double bond on 1 O implicit, resonance?
+ATOM O2A  ON3    -0.82  ! ? same query as above?
+ATOM O3A  ON2    -0.74
+!ATOM PB   P3      1.50  ! charge 1.10 -> 1.50 (taken from ATP instead of ADP)
+ATOM PB   P      1.50  ! charge 1.10 -> 1.50 (taken from ATP instead of ADP)
+ATOM O1B  ON3    -0.82  ! charge -0.9 -> -0.82 (these O to be like in ATP)
+ATOM O2B  ON3    -0.82  ! charge -0.9 -> -0.82 (these O to be like in ATP) 
+!!ATOM O5D  OC311  -0.69  ! ???? O3B -> O5D, charge -0.9 -> -0.65, type ON3 -> OC311, HO5 next to O5 is removed and it had +0.42 charge... should that be added to C5 or split equally between C5D and O5D ? so -0.65 -> -0.69 (to make net -2 charge in group)
+ATOM O5D  ON2  -0.69
+ATOM C5D  CC321   0.05  ! C5 -> C5D
+ATOM H51  HCA2    0.09  ! ? do I need to change H names, or psfgen will identify from the bonds listed below with these names
+ATOM H52  HCA2    0.09  ! ? same question as above
+! this group has total charge -2. 
+! checked below and no group has non zero charge. So extra 0.19 charge is coming from the 2 terminals, so fixing that in patch 1TER, 2TER
+GROUP
+ATOM C4D  CC3153  0.11  !
+ATOM H4D  HCA1    0.09  ! ? is renaming needed for H, H4 -> H4D
+ATOM O4D  OC3C51 -0.40  ! O4 -> O4D
+ATOM C1D  CC3152  0.34  ! C1 -> C1D
+ATOM H1D  HCA1    0.09  ! H1 -> H1D
+!ATOM O1D  OC311  -0.65  !  this O1D is to be covalently patched/bonded to O2' of next monomer
+ATOM O1D  OC311  -0.23  ! 
+!ATOM HO1  HCP1    0.42  !
+GROUP
+ATOM C2D  CC3151  0.14  ! C2 -> C2D
+ATOM H2D  HCA1    0.09  ! H2 -> H2D
+ATOM O2D  OC311  -0.65  ! O2 -> O2D
+ATOM HO2  HCP1    0.42  !
+GROUP                   !
+ATOM C3D  CC3151  0.14  ! C3 -> C3D
+ATOM H3D  HCA1    0.09  ! H2 -> H2D
+ATOM O3D  OC311  -0.65  ! O3 -> O3D
+ATOM HO3  HCP1    0.42  !
+BOND PB   O3A       PB   O1B       PB    O2B      PB   O5D       O3A  PA
+BOND PA   O1A       PA   O2A       PA    O5'      O3'  H3T
+BOND O5'  C5'       C5'  C4'       C4'  O4'       C4'  C3'       O4'  C1'
+BOND C1'  N9        C1'  C2'       N9   C4        N9   C8        C4   N3
+BOND C2   N1        C6   N6
+BOND N6   H61       N6   H62       C6   C5        C5   N7
+BOND C2'  C3'       C3'  O3'
+BOND C1'  H1'       C2'  H2''      C3'  H3'       C4'  H4'       C5'  H5'
+BOND C5'  H5''      C8   H8        C2   H2
+BOND O4D C1D  C1D H1D   C1D O1D
+BOND C1D C2D  C2D H2D   C2D O2D   O2D HO2
+BOND C2D C3D  C3D H3D   C3D O3D   O3D HO3
+BOND C3D C4D  C4D H4D   C4D C5D   C4D O4D
+BOND C5D H51 C5D H52  C5D O5D
+DOUBLE N1   C6    N3   C2    C4   C5        N7   C8
+IMPR N6   C6   H61  H62       C6   N1   C5   N6
+DONO H61  N6
+DONO H62  N6
+!DONO H2'  O2'
+ACCE N3
+ACCE N7
+ACCE N1
+ACCE O1A  PA
+ACCE O2A  PA
+!ACCE O2'
+ACCE O3'
+ACCE O4'
+ACCE O5'
+ACCE O3A
+ACCE O5D ! O3B -> O5D, maybe again have to modify this
+ACCE O2B
+ACCE O1B
+
+ IC    C5'     O5'     PA      O1A         1.4410  122.32   87.94  100.49   1.4886
+ IC    C5'     O5'     PA      O2A         1.4410  122.32  -34.46  103.58   1.4860
+ IC    O1A     O2A     *PA     O3A         1.4886  117.99 -144.34  113.98   1.5239
+ IC    O5'     PA      O3A     PB          1.5958   98.37 -161.33  117.20   1.6142
+ IC    PA      O3A     PB      O1B         1.5239  117.20  -40.60  110.60   1.5279
+ IC    O3A     PB      *O1B    O2B         2.5838   35.79 -113.37   34.28   2.5253
+ IC    O3A     PB      *O1B    O5D         2.5838   35.79  119.13   32.99   2.5605
+ IC    PA      O5'     C5'     C4'         1.5958  122.32  -51.67  114.79   1.5447
+ IC    O5'     C5'     C4'     C3'         1.4410  114.79  -58.82  120.15   1.5575
+ IC    C5'     C4'     C3'     O3'         1.5447  120.15   24.57  114.35   1.4341
+ IC    H3T     O3'     C3'     C4'         0.9993  106.88   49.50  114.35   1.5575
+ IC    O4'     C3'     *C4'    C5'         1.4692  104.72 -123.02  120.15   1.5447
+ IC    C2'     C4'     *C3'    O3'         1.5185  103.84  123.29  114.35   1.4341
+ IC    C4'     C3'     C2'     C1'         1.5575  103.84  -34.69  100.67   1.5216
+ IC    C3'     C2'     C1'     N9          1.5185  100.67  159.08  113.67   1.4641
+ IC    O4'     C1'     N9      C4          1.4113  111.63 -130.55  127.26   1.3686
+ IC    C1'     C4      *N9     C8          1.4641  127.26  179.24  106.16   1.3741
+ IC    C4      N9      C8      N7          1.3686  106.16    0.49  113.56   1.3167
+ IC    C8      N9      C4      C5          1.3741  106.16   -0.36  105.63   1.3838
+ IC    C8      N7      C5      C6          1.3167  103.56 -179.38  131.99   1.4088
+ IC    N7      C5      C6      N1          1.3861  131.99  179.37  118.17   1.3553
+ IC    C5      C6      N1      C2          1.4088  118.17    0.12  117.88   1.3365
+ IC    N9      C5      *C4     N3          1.3686  105.63 -179.47  126.53   1.3462
+ IC    C5      N1      *C6     N6          1.4088  118.17  179.95  118.70   1.3458
+ IC    N1      C6      N6      H61         1.3553  118.70    0.02  117.62   0.9928
+ IC    H61     C6      *N6     H62         0.9928  117.62 -177.97  120.15   0.9969
+ IC    C5      N1      *C6     N6          1.4088  118.17  179.95  118.70   1.3458
+ IC    N1      C6      N6      H61         1.3553  118.70    0.02  117.62   0.9928
+ IC    H61     C6      *N6     H62         0.9928  117.62 -177.97  120.15   0.9969
+ IC    N9      N7      *C8     H8          1.3741  113.56 -179.64  125.94   1.0936
+ IC    N1      N3      *C2     H2          1.3365  129.74  179.76  115.01   1.0933
+ !IC    C1'     C3'     *C2'    O2'         1.5216  100.67  120.50  109.82   1.4183
+ !IC    H2'     O2'     C2'     C3'         0.9782  102.50   14.41  109.82   1.5185
+ IC    O4'     C2'     *C1'    H1'         1.4113  108.03 -113.14  108.10   1.1140
+ IC    C1'     C3'     *C2'    H2''        1.5216  100.67 -117.81  110.45   1.1106
+ IC    C2'     C4'     *C3'    H3'         1.5185  103.84 -116.26  105.90   1.1117
+ IC    C3'     O4'     *C4'    H4'         1.5575  104.72 -113.29  107.42   1.1138
+ IC    C4'     O5'     *C5'    H5'         1.5447  114.79 -121.61  108.15   1.1098
+ IC    C4'     O5'     *C5'    H5''        1.5447  114.79  121.78  108.81   1.1138
+
+IC C4D   O4D   C1D   C2D   1.4343  107.06  -43.51  102.91   1.5564
+IC O4D   C1D   C2D   C3D   1.4227  102.91   29.68  103.27   1.5615
+IC C1D   C2D   C3D   C4D   1.5564  103.27   -6.90  103.97   1.5386
+IC C3D   O4D  *C4D   C5D   1.5386  104.85  125.17  112.30   1.5446
+IC C3D   O4D  *C4D   H4   1.5386  104.85 -116.42  106.12   1.1143
+!IC O4D   C4D   C5D   O5D   1.4343  112.30 -178.59  110.88   1.4293
+!IC C4D   C5D   O5D   HO5  1.5446  110.88  -86.85  110.49   0.9639
+!IC O5D   C4D  *C5D   H51  1.4293  110.88  119.78  108.95   1.1027
+!IC O5D   C4D  *C5D   H52  1.4293  110.88 -122.02  109.96   1.1020
+IC C2D   O4D  *C1D   O1D   1.5564  102.91  122.54  109.76   1.4025
+!IC O4D   C1D   O1D   HO1  1.4227  109.76   66.79  107.33   0.9584
+IC C2D   O4D  *C1D   H1D   1.5564  102.91 -117.68  108.69   1.1117
+IC C3D   C1D  *C2D   H2D   1.5615  103.27 -113.35  106.87   1.1124
+IC C3D   C1D  *C2D   O2D   1.5615  103.27  127.46  116.16   1.4278
+IC C1D   C2D   O2D   HO2  1.5564  116.16  -81.77  106.00   0.9665
+IC C2D   C4D  *C3D   O3D   1.5615  103.97 -125.04  111.07   1.4263
+IC C2D   C4D  *C3D   H3D   1.5615  103.97  115.28  109.94   1.1126
+IC C4D   C3D   O3D   HO3  1.5386  111.07  -77.15  108.40   0.9644
+IC C2D   C4D  *C3D   H4   1.5615  103.97  -95.69   28.61   2.1867
+PATC  FIRS NONE LAST NONE
+

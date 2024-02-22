@@ -1,0 +1,2 @@
+1. Run getData_min_contact_dist_mg_par.tcl with wrapped trajectory
+2. Run 2-plot_twin.py to get Fig. S9 for 15mer PAR
