@@ -26,6 +26,9 @@ Tcl 8.0 or Python 3.7.3: Custom code provided to analyze the MD trajectories. <b
 VMD (for tcl) or MDAnalysis 1.1.1 (for Python): For reading the trajectory (DCD) files. <br />
 EOM v2.1 in ATSAS v3: Structural ensemble analysis, using MD trajectories as input. <br />
 MATLAB R2021: Custom code provided for hierarchical clustering, computing structural order parameters, and class averaging via spectral clustering. <br />
+  Special dependencies: 
+  hex2rgb.m (Chad A. Greene, April 2014)
+  SpectralClustering.m (Ingo Bürk, areslp, 2011)
 PyMOL v2.5.5: To visualize structures and for structural alignment during class averaging.<br />
 
 The specific versions of each software that were used for analyses is included. Future versions will likely also work. 
