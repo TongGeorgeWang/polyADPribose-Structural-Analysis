@@ -18,7 +18,8 @@ ClassAveraging_SpectralClustering: class averaging of disordered structural ense
 
 
 **Hardware Requirements** <br />
-This analysis should only require a standard computer that is able to run the commonly available software below, with enough memory to complete low to moderate intensity computing tasks.
+This analysis should only require a standard computer that is able to run the commonly available software below, with enough memory to complete low to moderate intensity computing tasks. <br />
+Please consult VMD for specific requirements about running MD simulations, as those can deviate from this claim. https://www.ks.uiuc.edu/Research/vmd/current/ug/node12.html
 
 **Software Requrements** <br />
 VMD 1.9.4a43: To visualize and construct MD simulation systems. <br />
@@ -34,10 +35,11 @@ MATLAB R2021: Custom code provided for hierarchical clustering, computing struct
 The specific versions of each software that were used for analyses is included. Future versions will likely also work. 
 
 **Instructions for use** <br />
-You need only install the above software and clone/download the folders in this repository. Separate, more detailed README files are provided in each folder where appropriate, wherein more detailed instructions are provided. 
+You need only install the above software and clone/download the folders in this repository. Separate, more detailed README files are provided in each folder where appropriate, wherein more detailed instructions are provided. <br />
+For a computer with an i5 or later processor and 16gb or more of RAM, each script should take 30 minutes or less, with most processes being completed in under 2 minutes. Please consult VMD for an idea of how long MD simulations will take for a given computer setup. https://www.ks.uiuc.edu/Research/vmd/current/ug/node12.html    
 
 **Demos** <br />
-Example input/output data featuring 15mer poly(ADP-ribose) in 100mM NaCl are included in each corresponding folder. 
+Example input/output data featuring 15mer poly(ADP-ribose) in 100mM NaCl are included in each corresponding folder. Please contact the corresponding authors of the manuscript if the full dataset on all constructs examined is desired. 
 
 **License** <br />
 This project is covered under the Apache 2.0 License.
