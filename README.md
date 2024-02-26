@@ -27,16 +27,14 @@ VMD 1.9.4a43: To visualize and construct MD simulation systems. <br />
 Tcl 8.0 or Python 3.7.3: Custom code provided to analyze the MD trajectories. <br />
 VMD (for tcl) or MDAnalysis 1.1.1 (for Python): For reading the trajectory (DCD) files. <br />
 EOM v2.1 in ATSAS v3: Structural ensemble analysis, using MD trajectories as input. <br />
-  Specific EOM executables (these are included in the folder): <br />
-  gajoe13.exe <br />
-  crysol.exe <br />
 PyMOL v2.5.5: To visualize structures and for structural alignment during class averaging.<br />
 MATLAB R2021: Custom code provided for hierarchical clustering, computing structural order parameters, and class averaging via spectral clustering. <br />
   Special MATLAB dependencies:  <br />
   hex2rgb.m (Chad A. Greene, April 2014) <br />
-  SpectralClustering.m (Ingo Bürk, areslp, 2011)
+  SpectralClustering.m (Ingo Bürk, areslp, 2011) <br />
+  After EOM, the CRYSOL executable is utilized to compute scattering profiles. <br /> 
 
-The specific versions of each software that were used for analyses is included. Future versions will likely also work. 
+The specific versions of each software that were used for analyses is included. Future versions will likely also work. Please see manuscript references for citations for these software entities. 
 
 **Instructions for use** <br />
 You need only install the above software and clone/download the folders in this repository. Separate, more detailed README files are provided in each folder where appropriate, wherein more detailed instructions are provided. <br />
