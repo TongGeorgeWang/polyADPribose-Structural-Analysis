@@ -12,6 +12,7 @@ EnsembleOptimizationMethod: EOM analysis to determine an ensemble of conformers 
 OrderParameters: computation of orientational correlation function, tortuosity (chain twist), and number of base stacking events in a structural ensemble <br />
 HierarchicalClustering: dividing structural ensembles into ~3 distinct categories based on size parameters <br />
 ClassAveraging_SpectralClustering: class averaging of disordered structural ensembles (identifying a handful of characteristic conformations) using graph theory and spectral clustering. <br />
+MolecularDynamics: unique parameter set used to model PAR and example contact analysis outputs
 
 
 
