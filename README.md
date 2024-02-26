@@ -41,7 +41,7 @@ You need only install the above software and clone/download the folders in this 
 For a computer with an i5 or later processor and 16gb or more of RAM, each script should take 30 minutes or less, with most processes being completed in under 2 minutes. Please consult VMD for an idea of how long MD simulations will take for a given computer setup. https://www.ks.uiuc.edu/Research/vmd/current/ug/node12.html    
 
 **Demos** <br />
-Example input/output data featuring 15mer poly(ADP-ribose) in 100mM NaCl are included in each corresponding folder. Please contact the corresponding authors of the manuscript if the full dataset on all constructs examined is desired. 
+Example input/output data featuring 15mer poly(ADP-ribose) in 100mM NaCl are included in each corresponding folder. Please contact the corresponding authors of the manuscript if the full dataset on all examined constructs is desired. 
 
 **License** <br />
 This project is covered under the Apache 2.0 License.
