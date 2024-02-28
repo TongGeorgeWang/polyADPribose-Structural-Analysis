@@ -29,8 +29,7 @@ VMD (for tcl) or MDAnalysis 1.1.1 (for Python): For reading the trajectory (DCD)
 EOM v2.1 in ATSAS v3: Structural ensemble analysis, using MD trajectories as input. <br />
 PyMOL v2.5.5: To visualize structures and for structural alignment during class averaging.<br />
 MATLAB R2021: Custom code provided for hierarchical clustering, computing structural order parameters, and class averaging via spectral clustering. <br />
-  Special MATLAB dependencies:  <br />
-  hex2rgb.m (Chad A. Greene, April 2014) <br />
+  Special MATLAB dependency:  <br />
   SpectralClustering.m (Ingo Bürk, areslp, 2011) <br />
   After EOM, the CRYSOL executable (from ATSAS) is utilized to compute scattering profiles. <br /> 
 
