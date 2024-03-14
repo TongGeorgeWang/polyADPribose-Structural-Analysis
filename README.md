@@ -20,10 +20,11 @@ MolecularDynamics: unique parameter set used to model PAR and example contact an
 
 **Hardware Requirements** <br />
 This analysis should only require a standard computer that is able to run the commonly available software below, with enough memory to complete low to moderate intensity computing tasks. <br />
-Please consult VMD for specific requirements about running MD simulations, as those can deviate from this claim. https://www.ks.uiuc.edu/Research/vmd/current/ug/node12.html
+Please consult NAMD for specific requirements about running MD simulations, as those can deviate from this claim. https://www.ks.uiuc.edu/Research/namd/2.14/ug/node99.html
 
 **Software Requrements** <br />
-VMD 1.9.4a43: To visualize and construct MD simulation systems. <br />
+NAMD 2.14: To run MD simulations. <br />
+VMD 1.9.4a43: To visualize MD simulation systems. <br />
 Tcl 8.0 or Python 3.7.3: Custom code provided to analyze the MD trajectories. <br />
 VMD (for tcl) or MDAnalysis 1.1.1 (for Python): For reading the trajectory (DCD) files. <br />
 EOM v2.1 in ATSAS v3: Structural ensemble analysis, using MD trajectories as input. <br />
@@ -37,7 +38,7 @@ The specific versions of each software that were used for analyses is included. 
 
 **Instructions for use** <br />
 You need only install the above software and clone/download the folders in this repository. Separate, more detailed README files are provided in each folder where appropriate, wherein more detailed instructions are provided. <br />
-For a computer with an i5 or later processor and 16gb or more of RAM, each script should take 30 minutes or less, with most processes being completed in under 2 minutes. Please consult VMD for an idea of how long MD simulations will take for a given computer setup. https://www.ks.uiuc.edu/Research/vmd/current/ug/node12.html    
+For a computer with an i5 or later processor and 16gb or more of RAM, each script should take 30 minutes or less, with most processes being completed in under 2 minutes. Please consult NAMD for an idea of how long MD simulations will take for a given computer setup. https://www.ks.uiuc.edu/Research/namd/2.14/ug/node99.html    
 
 **Demos** <br />
 Example input/output data featuring 15mer poly(ADP-ribose) in 100mM NaCl are included in each corresponding folder. Please contact the corresponding authors of the manuscript if the full dataset on all examined constructs is desired. 
