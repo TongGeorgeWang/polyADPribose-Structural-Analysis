@@ -1,8 +1,8 @@
-function write_intensity_file(pdbdir,postfix,idx,q,iq)
+function write_intensity_file(pdbdir,idx,q,iq)
 if isempty(pdbdir)
-    fn = ['jun_' postfix '00.int'];
+    fn = 'crysolIntensitiesOfPool.int';
 else
-    fn = [pdbdir '\jun_' postfix '00.int'];
+    fn = [pdbdir '\crysolIntensitiesOfPool.int'];
 end
 
 if isempty(ls(fn)) || idx == 1
