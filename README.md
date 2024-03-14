@@ -32,7 +32,7 @@ MATLAB R2021: Custom code provided for hierarchical clustering, computing struct
   Special MATLAB dependency:  <br />
   SpectralClustering.m (Ingo Bürk, areslp, 2011) <br />
   After EOM, the CRYSOL executable (from ATSAS) is utilized to compute scattering profiles. <br /> 
-
+The MATLAB code for running EOM may require a Windows OS, as it calls on remote DOS commands. <br />
 The specific versions of each software that were used for analyses is included. Future versions will likely also work. Please see manuscript references for citations for these software entities. 
 
 **Instructions for use** <br />
