@@ -2,6 +2,8 @@
 This folder contains all the scripts used to class average disordered PAR ensembles in this study. An example dataset of PAR15 in 100mM NaCl is included.  
 The analysis has already been performed and all outputs generated. The workflow for doing so is written below.
 This analysis was performed using MATLAB R2021 and PyMol v1.5.5
+
+An updated, more user-friendly class averaging workflow is available at: https://github.com/TongGeorgeWang/CASA-ToDiMo
 /////////////
 
 Copy all EOM PAR PDBs into folder
