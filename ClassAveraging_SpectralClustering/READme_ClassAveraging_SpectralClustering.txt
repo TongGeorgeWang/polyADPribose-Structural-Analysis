@@ -1,6 +1,5 @@
 /////////////
 This folder contains all the scripts used to class average disordered PAR ensembles in this study. An example dataset of PAR15 in 100mM NaCl is included.  
-All scripts were created in house with the exception of 'SpectralClustering.m' and 'hex2rgb.m', which were utilized from existing code repositories and cited accordingly in their script preambles. 
 The analysis has already been performed and all outputs generated. The workflow for doing so is written below.
 This analysis was performed using MATLAB R2021 and PyMol v1.5.5
 /////////////
