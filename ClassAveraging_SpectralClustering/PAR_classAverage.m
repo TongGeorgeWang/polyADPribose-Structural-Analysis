@@ -69,47 +69,6 @@ h.XDisplayLabels = CustomLabels; h.YDisplayLabels = CustomLabels;
 xlabel('structure'); ylabel('structure')
 
 
-% %% Plot connectivity matrix in circular form for easier visualization
-% % Method 1 
-% theta=linspace(0,2*pi,Nstructures+1);theta=theta(1:end-1);
-% [x,y]=pol2cart(theta,1);
-% 
-% [ind1,ind2]=ind2sub(size(RMSD_binary),find(RMSD_binary(:)));
-% 
-% figure; hold all
-% plot(x,y,'.k','markersize',20);hold on
-% arrayfun(@(p,q)line([x(p),x(q)],[y(p),y(q)]),ind1,ind2);
-% axis equal off
-% 
-% 
-% % Method 2 
-% % x/y coordinates of nodes in a circular layout
-% r =  1;
-% theta = linspace(0,2*pi,Nstructures+1)'; theta(end) = [];
-% xy = r .* [cos(theta) sin(theta)];
-% 
-% % labels of nodes
-% txt = cellstr(num2str((1:Nstructures)','%02d'));
-% 
-% % Optional: limit center crossings 
-% p = symrcm(RMSD_binary);
-% RMSD_binary_limitCrossings = RMSD_binary(p,p);
-% txt = txt(p);
-% 
-% % show nodes and edges
-% figure; hold all
-% line(xy(:,1), xy(:,2), 'LineStyle','none', ...
-%     'Marker','.', 'MarkerSize',15, 'Color','g')
-% hold on
-% gplot(RMSD_binary, xy, 'b-')
-% axis([-1 1 -1 1]); axis equal off
-% hold off
-% 
-% % show node labels
-% h = text(xy(:,1).*1.05, xy(:,2).*1.05, txt, 'FontSize',8);
-% set(h, {'Rotation'},num2cell(theta*180/pi))
-
-
 %% Perform spectral clustering on connectivity matrix; plot graph
 
 figure; hold all
@@ -123,7 +82,7 @@ grid off
 h.EdgeColor = [0.5 0.5 0.5];
 h.Marker = 'O';
 
-[C, ~] = SpectralClustering(RMSD_binary, nKmeans, 3);
+C = SpecClust(RMSD_binary, nKmeans);
 
 % Color graph nodes by cluster
 clusters = [1:Nstructures; C']';
