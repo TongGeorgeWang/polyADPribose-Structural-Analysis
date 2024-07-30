@@ -1,3 +1,6 @@
+[![DOI](https://zenodo.org/badge/761409703.svg)](https://zenodo.org/doi/10.5281/zenodo.12823464)
+
+
 ![image](https://github.com/TongGeorgeWang/polyADPribose-Structural-Analysis/assets/160785251/db72b17f-fa75-41c8-8be3-dde28659a9a2)
 
 **Overview** <br />
