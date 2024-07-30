@@ -4,7 +4,7 @@
 %   Follows the steps described in: https://www.mathworks.com/help/stats/hierarchical-clustering.html
 %
 %   Feb 2023 - made plots publication friendly and also fixed that
-%   bug that caused dendrogram colouring to be incorrect
+%   bug that caused dendrogram colouring to be incorrect.
 %
 
 clear; close all
