@@ -5,10 +5,8 @@
 
 **Overview** <br />
 All analysis performed on structural ensembles of poly(ADP-ribose) that are included in: <br />
-Length-dependent Intramolecular Coil-to-Globule Transition in Poly(ADP-ribose) Induced by Cations
-Tong Wang, Kush Coshic, Mohsen Badiee, Aleksei Aksimentiev, Lois Pollack, Anthony K. L. Leung
-BioRxiv, 2024
-doi: https://doi.org/10.1101/2023.10.25.564012
+**Tong Wang, Kush Coshic, Mohsen Badiee, Maranda R. McDonald, Aleksei Aksimentiev, Lois Pollack, Anthony K. L. Leung, Cation-induced intramolecular coil-to-globule transition in poly(ADP-ribose), Nat Comm, 15(7901), 2024.** <br />
+https://www.nature.com/articles/s41467-024-51972-9
 
 Each folder represents a separate analysis step. <br />
 EnsembleOptimizationMethod: EOM analysis to determine an ensemble of conformers that agrees with experimental small-angle scattering data  <br />
